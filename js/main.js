@@ -7,7 +7,7 @@ window.onload = function (){
 
 $(document).ready(function(){
    $('ul li a:first').addClass('active');
-   $('#contenido').load('resources/conocimientos.html');
+   $('#contenido').load('resources/inicio.html');
 
    $('.nav-link').click(function(){
    	$('ul li a').removeClass('active');
