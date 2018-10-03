@@ -8,6 +8,10 @@ body{
 	background: #D1D1D1;
 }
 
+h1{
+	text-align: center;
+}
+
 hr{
 	background: rgba(255,255,255,.5);
 }
@@ -61,6 +65,24 @@ nav img{
 	width: 3em;
 	margin-right: 1%;
 }
+
+
+.imagen_carrusel{
+	width: 100%;
+}
+
+.imagen_conocimientos{
+	width: 10em;
+	height: 40%;
+	display: block;
+	margin: auto;
+}
+
+.card{
+	height: 35em;
+	overflow: scroll;
+}
+
 
 /**FOOTER**/
 footer p{
