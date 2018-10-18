@@ -1,89 +1,420 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Cristian Peñaranda</title>
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1fuMf9BYyM7MBQXsWCwOBTc7kgyfSJKdl" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--IMPORTACION DE BOOTSTRAP-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<script type="text/JavaScript" src="js/main.js"></script>
-	<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1fuMf9BYyM7MBQXsWCwOBTc7kgyfSJKdl" />
+  <title>Cristian Peñaranda</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-	<div id="contenedor_carga">
-		<img id="logo_carga" src="https://drive.google.com/uc?export=view&id=1fuMf9BYyM7MBQXsWCwOBTc7kgyfSJKdl">
-		<div id="carga"></div>
-	</div>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<img src="https://drive.google.com/uc?export=view&id=1fuMf9BYyM7MBQXsWCwOBTc7kgyfSJKdl">
-			<a class="navbar-brand" href="Inicio" id="pagina_inicio">Cristian Peñaranda</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="inicio" id="pagina_inicio"><ion-icon name="home"></ion-icon> Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="conocimientos" id="pagina_conocimientos"><ion-icon name="desktop"></ion-icon> Conocimientos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contacto" id="pagina_contacto"><ion-icon name="mail"></ion-icon> Contacto</a>
-					</li>
-				</ul>
-				<form class="row">
-					<div class="col-md-8">
-						<input class="form-control mr-sm-2" type="search" placeholder="Buscar....">
-					</div>
-					<div class="col-md-3">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-					</div>
-				</form>
-			</div>
-		</nav>
-	</header>
 
-	<!--CONTENIDO-->
-	<div id="contenido">
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
 
-		<br>
-	</div>
+  <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img style="width: 100%;height: 100%;" src="https://drive.google.com/uc?export=view&id=18oOO1pUvwGHWWxoLPQ4KZ_Z6CJjFmjk6">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Variedad de <span>Conocimientos</span></h1>
+            <p class="animated fadeInRightBig">FrontEnd - Diseño Web - BackEnd - PhotoShop - Entre Otros...</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio">Bienvenido</a>
+          </div>
+        </div>
+        <div class="item">
+          <img style="width: 100%;height: 100%;" src="https://drive.google.com/uc?export=view&id=1r580YMtLl0qKBoTft1q_daQ9e7bx0MVZ" >
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Diseños Web <span>Responsivos</span></h1>
+            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - JavaScript - Entre Otros...</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio">Bienvenido</a>
+          </div>
+        </div>
+        <div class="item">
+          <img style="width: 100%;height: 100%;" src="https://drive.google.com/uc?export=view&id=1PIEJGnH1lgipy5KO1m6KsbHLpS9M6w0u">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Diferentes Lenguajes de <br><span>Programación</span></h1>
+            <p class="animated fadeInRightBig">Java - PHP - HTML5</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio">Bienvenido</a>
+          </div>
+        </div>
+      </div>
+      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
 
+      <a id="tohash" href="#portfolio"><i class="fa fa-angle-down"></i></a>
 
-	<footer class="bg-dark p-2">
-		<div class="col-md-12">
-			<div class="row">
-				<div class="col-md-4 mb-3 mt-2">
-					<a href="https://ww2.ufps.edu.co/" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1hveoYFwoY2ySyhetUN2dvVHJ8yzQnPY9" title="Universidad Francisco de Paula Santander"></a>
-					<a href="" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1fuMf9BYyM7MBQXsWCwOBTc7kgyfSJKdl" title="Cristian Peñaranda"></a>
-					<a href="http://ingsistemas.ufps.edu.co/" target="_blank"><img src="http://sandbox2.ufps.edu.co/registro/sistemas.png" title="Ingeniería de Sistemas"></a>
-				</div>
-				<div class="col-md-4 redes_sociales mb-3">
-					<p>Contacto</p>
-					<hr>
-					<a href="https://www.facebook.com/cristian.sanchezz1" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1uvTt8XnErD0j3KPPmxIivVmJU1THPFWy" title="Facebook"></a>		
-					<a href="https://www.instagram.com/cristianps95/" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1cmpcDUwXs1anC2olGVRxbBbmyu5tDh9O" title="Instagram"></a>		
-					<a href="https://twitter.com/_CristianSz_20" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1iIj71Hc-l9xuFfeyjkTUjC9ptRgIp1m4" title="Twitter"></a>		
-					<a href="https://wa.me/573123836268" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1OeIFXS3jLNxg-jjaatgo_S5WYxsYOaZm" title="WhatsApp"></a>	
-					<a href="mailto:cristiancamilops@ufps.edu.co" target="_blank"><img src="https://drive.google.com/uc?export=view&id=1GfLBYsgLqH-qfeYlSKbPLtukTL6pWZr5" title="Google"></a>
-					<a href="https://github.com/cristianpenaranda/" target="_blank"><img src="http://icons-for-free.com/free-icons/png/512/1033167.png" title="GitHub"></a>			
-				</div>
-				<div class="col-md-4">
-					<p>&#169; 2018 <br>Cristian Camilo Peñaranda Sanchez <br>
-						Todos los derechos reservados
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+    </div><!--/#home-slider-->
+    <div class="main-nav" style="background: #212529;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Cristian Peñaranda</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home"><ion-icon name="home"></ion-icon> Inicio</a></li>                 
+            <li class="scroll"><a href="#portfolio"><ion-icon name="clipboard"></ion-icon> Conocimientos</a></li>
+            <li class="scroll"><a href="#team"><ion-icon name="person"></ion-icon> Perfil</a></li>
+            <li class="scroll"><a href="#contact"><ion-icon name="mail"></ion-icon> Contacto</a></li>       
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <h2>Conocimientos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div> 
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/4.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
+            <div class="folio-image">
+              <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <div class="overlay-content">
+                <div class="overlay-text">
+                  <div class="folio-info">
+                    <h3>Time Hours</h3>
+                    <p>Design, Photography</p>
+                  </div>
+                  <div class="folio-overview">
+                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
+                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio-single-wrap">
+      <div id="portfolio-single">
+      </div>
+    </div><!-- /#portfolio-single-wrap -->
+  </section><!--/#portfolio-->
+
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms"><br><br><br><br><br><br>
+          <h2>Perfil Profesional</h2>
+          <p>La carrera de Ingeniería en Sistemas Informáticos busca formar profesionales capaces de planear, diseñar, organizar, producir, operar y mantener los sistemas electrónicos para el procesamiento de datos, los sistemas de programación tanto de base como de aplicación del equipo de cómputo, así como efectuar el control digital de procesos automáticos.</p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+                <img class="img-responsive" src="https://drive.google.com/uc?export=view&id=1zBAzyQ8IIBC3yitGDG3hyEKWyYG23CNx" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Cristian Peñaranda</h3>
+                <h4>Estudiante de Ingenieria de Sistemas</h4>
+                <p>Universidad Francisco de Paula Santander</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="https://www.facebook.com/cristian.sanchezz1" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="https://twitter.com/_CristianSz_20" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="https://www.instagram.com/cristianps95/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  <li><a class="whatsapp" href="https://wa.me/573123836268" target="_blank" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                  <li><a class="github" href="https://github.com/cristianpenaranda/" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                  <li><a class="rss" href="mailto:cristiancamilops@ufps.edu.co" target="_blank" title="Correo Electrónico"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <div class="member-info">
+                <h4 style="text-align: initial;">Como estudiante de pregrado en Ingeniería de Sistemas de la Universidad Francisco de Paula Santander me considero: <br><br>
+                  - Una persona con capacidad para mantener un buen rendimiento en mis asignaturas, realizar adecuadamente mis proyectos y cumplir con mis compromisos. <br><br>
+                  - Con facilidad de aprendizaje que adquiero y desarrollo capacidades deductivas, rigor científico y trabajo en grupo. <br><br>
+                  - Investigador con capacidad creativa, disciplina de estudio y que asimilo fácilmente​ los continuos cambios tecnológicos. <br><br>
+                  - Una personas que, durante mi formación, desarrollo creatividad, habilidades analíticas, éticas y comunicacionales. <br><br>
+                  - Consciente del impacto de la tecnología en el medio. <br><br>
+                - Con una visión coherente y comprensiva de los sistemas y la computación como disciplina.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </section><!--/#team-->
+
+  <section id="contact">
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contacto</h2>
+            <p>Para mi son muy importantes todas tus inquietudes</p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Nombre" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Asunto" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Aquí tu mensaje..." required="required"></textarea>
+                </div>                        
+                <div class="form-group">
+                  <button type="submit" class="btn-submit" style="background: #aa1916;">Enviar Mensaje <ion-icon name="send"></ion-icon></button>
+                </div>
+              </form>   
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <p>También puedes encontrarme en:</p>
+                <ul class="address">
+                  <li><i class="fa fa-map-marker"></i> <span> Ubicación:</span> Cúcuta, Colombia </li>
+                  <li><i class="fa fa-phone"></i> <span> Teléfono:</span> +57-3123836268  </li>
+                  <li><i class="fa fa-envelope"></i> <span> Correo Electrónico:</span><a href="mailto:cristiancamilops@ufps.edu.co" target="_blank"> cristiancamilops@ufps.edu.co</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="https://cristianpenaranda.github.io/Pagina-Personal/" target="_blank">https://cristianpenaranda.github.io/Pagina-Personal/</a></li>
+                  <li><i class="fa fa-facebook"></i> <span> Facebook:</span> <a href="https://www.facebook.com/cristian.sanchezz1" target="_blank">Cristian Peñaranda</a></li>
+                  <li><i class="fa fa-twitter"></i> <span> Twitter:</span> <a href="https://twitter.com/_CristianSz_2" target="_blank">_CristiaSz_20</a></li>
+                  <li><i class="fa fa-instagram"></i> <span> Instagram:</span> <a href="https://www.instagram.com/cristianps95/" target="_blank">cristianps95</a></li>
+                  <li><i class="fa fa-whatsapp"></i> <span> WhatsApp:</span> <a href="https://wa.me/573123836268" target="_blank">+57-3123836268</a></li>
+                  <li><i class="fa fa-github"></i> <span> Github:</span> <a href="https://github.com/cristianpenaranda/" target="_blank">cristianpenaranda</a></li>
+                </ul>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section><!--/#contact-->
+  <footer id="footer" style="background: #212529;">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a class="facebook" href="https://www.facebook.com/cristian.sanchezz1" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/_CristianSz_20" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="https://www.instagram.com/cristianps95/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="whatsapp" href="https://wa.me/573123836268" target="_blank" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a class="github" href="https://github.com/cristianpenaranda/" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+            <li><a class="rss" href="mailto:cristiancamilops@ufps.edu.co" target="_blank" title="Correo Electrónico"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p style="text-align: center; color: #212529;">&copy; 2018 Cristian Peñaranda</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
 </body>
 </html>
